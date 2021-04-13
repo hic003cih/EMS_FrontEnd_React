@@ -18,6 +18,15 @@ export class Navbars extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
+            <Nav.Link
+              as={Link}
+              to="/CreatePlant"
+              eventKey="/CreatePlant"
+              title="CreatePlant"
+            >
+              Create
+            </Nav.Link>
+            <br />
             <Nav.Link as={Link} to="/Plant" eventKey="/Plant" title="Plant">
               Plant
             </Nav.Link>

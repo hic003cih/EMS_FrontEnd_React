@@ -11,7 +11,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Routes from "./components/Routes";
 
-const ExampleToast = ({ children }) => {
+/* const ExampleToast = ({ children }) => {
   const [show, toggleShow] = useState(true);
 
   return (
@@ -25,7 +25,7 @@ const ExampleToast = ({ children }) => {
       </Toast>
     </>
   );
-};
+}; */
 
 export function App() {
   return (
@@ -34,7 +34,7 @@ export function App() {
       <h2 className="title">my-app</h2>
 
       <div>
-        This project is generated with{" "}
+        {/* This project is generated with{" "}
         <b>
           <a href="https://github.com/shpota/goxygen">goxygen</a>
         </b>
@@ -42,7 +42,7 @@ export function App() {
         <p />
         The following list of technologies comes from a REST API call to the
         Go-based back end. Find and change the corresponding code in{" "}
-        <code>webapp/src/tech/Tech.js</code> and <code>server/web/app.go</code>.
+        <code>webapp/src/tech/Tech.js</code> and <code>server/web/app.go</code>. */}
         {/*<Tech/>*/}
         <Plant></Plant>
         {/* <Container className="p-3">
