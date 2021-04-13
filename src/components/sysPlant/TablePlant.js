@@ -59,18 +59,20 @@ export class TablePlant extends Component {
       );
     });
     return (
-      <Table striped bordered hover>
-        <thead>
-          <th>#</th>
-          <th>Name</th>
-          <th>Code</th>
-          <th>Desc</th>
-          <th>Remark</th>
-          <th>Edit</th>
-          <th>Delete</th>
-        </thead>
-        {body}
-      </Table>
+      <div style={{ marginTop: 50 }}>
+        <Table striped bordered hover>
+          <thead>
+            <th>#</th>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Desc</th>
+            <th>Remark</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </thead>
+          {body}
+        </Table>
+      </div>
     );
   }
 }

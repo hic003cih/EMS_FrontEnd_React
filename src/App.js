@@ -25,8 +25,6 @@ export function App() {
   return (
     <div className="app">
       <Navbars></Navbars>
-      <h2 className="title">my-app</h2>
-
       <div>
         {/* This project is generated with{" "}
         <b>

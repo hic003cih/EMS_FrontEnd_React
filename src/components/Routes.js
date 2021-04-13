@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import { CreatePlant } from "./sysPlant/CreatePlant";
 import { TablePlant } from "./sysPlant/TablePlant";
+import { EditComponent } from "./sysPlant/EditPlant";
 import { HomeComponent } from "./HomeComponent";
 
 const Routes = () => (
@@ -11,6 +12,7 @@ const Routes = () => (
       {/* <PlantForm /> */}
     </Route>
     <Route exact path="/TablePlant" component={TablePlant}></Route>
+    <Route path="/edit/:id" component={EditComponent}></Route>
   </Switch>
 );
 

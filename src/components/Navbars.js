@@ -28,7 +28,6 @@ export class Navbars extends Component {
             >
               Create
             </Nav.Link>
-            <br />
             <Nav.Link
               as={Link}
               to="/TablePlant"
@@ -37,7 +36,6 @@ export class Navbars extends Component {
             >
               TablePlant
             </Nav.Link>
-            <br />
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
