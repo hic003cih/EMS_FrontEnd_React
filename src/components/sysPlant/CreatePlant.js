@@ -23,7 +23,8 @@ export class CreatePlant extends Component {
     this.state = {
       plant_name: "",
       plant_code: "",
-      plant_desc: ""
+      plant_desc: "",
+      plant_remark: ""
     };
     this.create = this.create.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -72,14 +73,13 @@ export class CreatePlant extends Component {
               <h1 className="display-4 text-center">Create</h1>
               <Form noValidate onSubmit={(e) => this.create(e)}>
                 <Form.Row>
-                  <Form.Group as={Col} md="4" controlId="validationCustom01">
+                  <Form.Group as={Col} md="6" controlId="validationCustom01">
                     <Form.Label>plant_name</Form.Label>
                     <Form.Control
                       required
                       type="text"
                       id="plant_name"
                       placeholder="plant_name"
-                      defaultValue="Mark"
                       value={this.state.plant_name}
                       onChange={(e) =>
                         this.handleChange({ plant_name: e.target.value })
@@ -87,28 +87,18 @@ export class CreatePlant extends Component {
                     />
                     <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                   </Form.Group>
-                  <Form.Group as={Col} md="4" controlId="validationCustom02">
-                    <Form.Label>Last name</Form.Label>
-                    <Form.Control
-                      required
-                      type="text"
-                      placeholder="Last name"
-                      defaultValue="Otto"
-                    />
-                    <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-                  </Form.Group>
                   <Form.Group
                     as={Col}
-                    md="4"
+                    md="6"
                     controlId="validationCustomUsername"
                   >
                     <Form.Label>plant_code</Form.Label>
                     <InputGroup hasValidation>
-                      <InputGroup.Prepend>
+                      {/* <InputGroup.Prepend>
                         <InputGroup.Text id="inputGroupPrepend">
                           @
                         </InputGroup.Text>
-                      </InputGroup.Prepend>
+                      </InputGroup.Prepend> */}
                       <Form.Control
                         type="text"
                         placeholder="plant_code"
@@ -127,7 +117,7 @@ export class CreatePlant extends Component {
                   </Form.Group>
                 </Form.Row>
                 <Form.Row>
-                  <Form.Group as={Col} md="6" controlId="validationCustom03">
+                  <Form.Group as={Col} md="12" controlId="validationCustom03">
                     <Form.Label>Plant_desc</Form.Label>
                     <Form.Control
                       type="text"
@@ -143,18 +133,22 @@ export class CreatePlant extends Component {
                       Please provide a valid city.
                     </Form.Control.Feedback>
                   </Form.Group>
-                  <Form.Group as={Col} md="3" controlId="validationCustom04">
-                    <Form.Label>State</Form.Label>
-                    <Form.Control type="text" placeholder="State" required />
+                </Form.Row>
+                <Form.Row>
+                  <Form.Group as={Col} md="12" controlId="validationCustom03">
+                    <Form.Label>Plant_Remark</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Plant_Remark"
+                      required
+                      id="Plant_Remark"
+                      value={this.state.plant_remark}
+                      onChange={(e) =>
+                        this.handleChange({ plant_remark: e.target.value })
+                      }
+                    />
                     <Form.Control.Feedback type="invalid">
-                      Please provide a valid state.
-                    </Form.Control.Feedback>
-                  </Form.Group>
-                  <Form.Group as={Col} md="3" controlId="validationCustom05">
-                    <Form.Label>Zip</Form.Label>
-                    <Form.Control type="text" placeholder="Zip" required />
-                    <Form.Control.Feedback type="invalid">
-                      Please provide a valid zip.
+                      Please provide a valid city.
                     </Form.Control.Feedback>
                   </Form.Group>
                 </Form.Row>

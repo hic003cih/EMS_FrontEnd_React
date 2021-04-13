@@ -14,7 +14,9 @@ export class Navbars extends Component {
   render() {
     return (
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Plant</Navbar.Brand>
+        <Navbar.Brand href="/Home" as={Link} to="/Home" eventKey="/Home">
+          Plant
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -27,8 +29,13 @@ export class Navbars extends Component {
               Create
             </Nav.Link>
             <br />
-            <Nav.Link as={Link} to="/Plant" eventKey="/Plant" title="Plant">
-              Plant
+            <Nav.Link
+              as={Link}
+              to="/TablePlant"
+              eventKey="/TablePlant"
+              title="TablePlant"
+            >
+              TablePlant
             </Nav.Link>
             <br />
             <Nav.Link href="#link">Link</Nav.Link>

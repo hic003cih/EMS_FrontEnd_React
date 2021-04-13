@@ -1,14 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 import { Tech } from "./components/tech/Tech";
-import { Plant } from "./components/sysPlant/Plant";
-import { PlantForm } from "./components/sysPlant/CreatePlant";
+import { TablePlant } from "./components/sysPlant/TablePlant";
 import { Navbars } from "./components/Navbars";
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Toast from "react-bootstrap/Toast";
-import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
 import Routes from "./components/Routes";
 
 /* const ExampleToast = ({ children }) => {
@@ -44,7 +38,6 @@ export function App() {
         Go-based back end. Find and change the corresponding code in{" "}
         <code>webapp/src/tech/Tech.js</code> and <code>server/web/app.go</code>. */}
         {/*<Tech/>*/}
-        <Plant></Plant>
         {/* <Container className="p-3">
           <Jumbotron>
             <h1 className="header">Welcome To React-Bootstrap</h1>
