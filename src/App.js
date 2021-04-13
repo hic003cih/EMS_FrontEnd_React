@@ -45,7 +45,7 @@ export function App() {
         <code>webapp/src/tech/Tech.js</code> and <code>server/web/app.go</code>.
         {/*<Tech/>*/}
         <Plant></Plant>
-        <Container className="p-3">
+        {/* <Container className="p-3">
           <Jumbotron>
             <h1 className="header">Welcome To React-Bootstrap</h1>
             <ExampleToast>
@@ -55,7 +55,7 @@ export function App() {
               </span>
             </ExampleToast>
           </Jumbotron>
-        </Container>
+        </Container> */}
       </div>
       {/* <Form>
         <Form.Group controlId="formPlantName">
