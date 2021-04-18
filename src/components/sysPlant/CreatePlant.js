@@ -10,14 +10,14 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Button from "react-bootstrap/Button";
 
 export class CreatePlant extends Component {
-  /* state = {
+   state = {
         technologies: [],
         friends: [],
         plant_name: '',
         id: '',
         plant_code: '',
         plant_desc:''
-    };*/
+    };
   constructor(props) {
     super(props);
     this.state = {
@@ -31,17 +31,17 @@ export class CreatePlant extends Component {
   }
 
   componentDidMount() {
-    /*axios.post(`${process.env.REACT_APP_API_URL}/api/Proct`)
+    axios.post(`${process.env.REACT_APP_API_URL}/api/Plant`)
             .then(resp => this.setState({
                 technologies: resp.data
-            }));*/
+            }));
   }
   create(e) {
     // add entity - POST
     e.preventDefault();
     console.log(this.state.plant_name);
     // creates entity
-    fetch("http://localhost:8080/api/Proct", {
+    fetch("http://localhost:8080/api/Plant", {
       method: "POST",
       headers: {
         //"x-rapidapi-host": "fairestdb.p.rapidapi.com",

@@ -30,11 +30,11 @@ export class Navbars extends Component {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/TablePlant"
-              eventKey="/TablePlant"
-              title="TablePlant"
+              to="/IndexPlant"
+              eventKey="/IndexPlant"
+              title="IndexPlant"
             >
-              TablePlant
+              IndexPlant
             </Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import { CreatePlant } from "./sysPlant/CreatePlant";
-import { TablePlant } from "./sysPlant/TablePlant";
+import { IndexPlant } from "./sysPlant/IndexPlant";
 import { EditComponent } from "./sysPlant/EditPlant";
 import { HomeComponent } from "./HomeComponent";
 
@@ -11,7 +11,7 @@ const Routes = () => (
     <Route exact path="/CreatePlant" component={CreatePlant}>
       {/* <PlantForm /> */}
     </Route>
-    <Route exact path="/TablePlant" component={TablePlant}></Route>
+    <Route exact path="/IndexPlant" component={IndexPlant}></Route>
     <Route path="/edit/:id" component={EditComponent}></Route>
   </Switch>
 );
